@@ -15,33 +15,32 @@ exclude = [ ".gitignore", "TESTVECTORS", "res/*" ]
 [badges]
 travis-ci = { repository = "dalek-cryptography/ed25519-dalek", branch = "master"}
 
+[dependencies]
+clear_on_drop = "0.2.3"
+
 [dependencies.curve25519-dalek]
-version = "1"
+version = "1.2.3"
 default-features = false
 
 [dependencies.rand]
-version = "0.6"
-features = ["i128_support"]
+version = "0.7.2"
 
 [dependencies.serde]
-version = "^1.0"
+version = "1.0.101"
 optional = true
 
 [dependencies.sha2]
-version = "^0.8"
+version = "0.8.0"
 default-features = false
 
 [dependencies.failure]
-version = "^0.1.1"
+version = "0.1.5"
 default-features = false
 
-[dependencies.clear_on_drop]
-version = "0.2"
-
 [dev-dependencies]
-hex = "^0.3"
-bincode = "^0.9"
-criterion = "0.2"
+hex = "0.4.0"
+bincode = "1.2.0"
+criterion = "0.3.0"
 
 [[bench]]
 name = "ed25519_benchmarks"

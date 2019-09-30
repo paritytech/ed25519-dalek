@@ -140,8 +140,7 @@ impl SecretKey {
     /// use ed25519_dalek::SecretKey;
     /// use ed25519_dalek::Signature;
     ///
-    /// let mut csprng: OsRng = OsRng::new().unwrap();
-    /// let secret_key: SecretKey = SecretKey::generate(&mut csprng);
+    /// let secret_key: SecretKey = SecretKey::generate(&mut OsRng);
     /// # }
     /// #
     /// # #[cfg(not(feature = "std"))]

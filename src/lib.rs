@@ -29,8 +29,7 @@
 //! use ed25519_dalek::Keypair;
 //! use ed25519_dalek::Signature;
 //!
-//! let mut csprng: OsRng = OsRng::new().unwrap();
-//! let keypair: Keypair = Keypair::generate(&mut csprng);
+//! let keypair: Keypair = Keypair::generate(&mut OsRng);
 //! # }
 //! #
 //! # #[cfg(not(feature = "std"))]
